@@ -26,7 +26,8 @@
         "lint": "eslint --ext .js,.ts ./src ./tests",
         "prepublish": "npm run build",
         "release": "npm run test && standard-version && git push --follow-tags && npm publish",
-        "test": "jest"
+        "test": "jest",
+	    "scan": "sonar-scanner"
     },
     "devDependencies": {
         "@babel/plugin-proposal-decorators": "^7.8.3",
@@ -45,6 +46,7 @@
         "jest": "^24.9.0",
         "rollup": "^2.10.2",
         "rollup-plugin-typescript2": "^0.27.1",
+        "sonarqube-scanner": "^2.8.1",
         "standard-version": "^8.0.1",
         "ts-jest": "^24.1.0",
         "tslib": "^1.10.0",
