@@ -27,7 +27,7 @@
         "prepublish": "npm run build",
         "release": "npm run test && standard-version && git push --follow-tags && npm publish",
         "test": "jest",
-	    "scan": "sonar-scanner"
+        "scan": "sonar-scanner -Dsonar.sources=./src"
     },
     "devDependencies": {
         "@babel/plugin-proposal-decorators": "^7.8.3",
